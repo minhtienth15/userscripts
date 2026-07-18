@@ -16,6 +16,11 @@ async function buildScripts() {
   await fs.rm(path.resolve('./dist'), { recursive: true, force: true })
   for (const plugin of plugins) {
     const name = path.basename(plugin)
+    const manifestPath = path.resolve(plugin, 'manifest.ts')
+    if (!(await fs.pathExists(manifestPath))) {
+      console.log(chalk.yellow(`Skipping plugin: ${name} (missing manifest.ts)`))
+      continue
+    }
     console.log(`Building plugin: ${name}`)
     const manifest = (
       await bundleRequire({

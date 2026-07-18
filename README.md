@@ -5,6 +5,7 @@
 - [YouTube Music Background Play](./src/plugins/youtube-music-background-play/README.md): Enable background play on YouTube Music.
 - [TVTropes Anti-Adblock Bypass](./src/plugins/tvtropes-anti-adblock-bypass/README.md): Bypass anti-adblock detection on TVTropes.org.
 - [App Store Connect - Auto NO Age Ratings](./src/plugins/appstore-auto-age-ratings/README.md): Auto-select NO/NONE for all age rating questions in App Store Connect.
+- [Edge Partner Center - Batch Add Search Terms](./src/plugins/edge-partner-batch-add-terms/README.md): Batch add comma-separated search terms on Edge Partner Center extension listings.
 
 ## FAQ
 
